@@ -1,3 +1,4 @@
+
 <template>
     <div class="container m-auto">
         <Timer/>
@@ -31,6 +32,7 @@
 </template>
 
 <script setup>
+
 const options = ref(['rock', 'paper', 'scissor']);
 let playerChoice = ref(null);
 let computerChoice = ref(null);

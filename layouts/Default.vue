@@ -8,6 +8,10 @@
             <li class=" cursor-pointer">
                 <NuxtLink to="/RockPaperScissor">Rock, Paper, Scissor</NuxtLink>
             </li>
+            |
+            <li>
+                <NuxtLink to="/CardGame">Card Game</NuxtLink>
+            </li>
         </ul>
     </div>
     <slot/>

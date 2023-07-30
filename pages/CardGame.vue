@@ -9,7 +9,7 @@
 
                 </div>
             </li>
-        </ul>
+        </ul>   
     </div>
 </template>
 
@@ -26,7 +26,7 @@ const cards = ref([
         turned: false
     },
     {
-        color: 'red',
+        color: 'pink',
         id: 3,
         turned: false
     },
@@ -45,16 +45,16 @@ const cards = ref([
         id: 6,
         turned: false
     },
-    // {
-    //     color: 'pink',
-    //     id: 7,
-    //     turned: false
-    // },
-    // {
-    //     color: 'pink',
-    //     id: 8,
-    //     turned: false
-    // },
+    {
+        color: 'red',
+        id: 7,
+        turned: false
+    },
+    {
+        color: 'pink',
+        id: 8,
+        turned: false
+    },
 ])
 const clickedCards = ref([])
 

@@ -1,8 +1,5 @@
 <template>
     <div class="container m-auto">
-        <div v-if="gameOver">
-            You Won!!!!
-        </div>
         <ul :class="['flex flex-wrap mt-10', temporaryPause ? 'pointer-events-auto' : 'pointer-events-none']">
             <li v-for="card in cards" :key="card.id" class="basis-1/4 p-3">
                 <div @click="flipCard(card)" :class="['h-[400px] rounded-2xl cursor-pointer', card.turned ? `bg-${card.color}-500` : 'bg-gray-500']">
@@ -85,10 +82,6 @@ const temporaryPause = computed(() => {
         play = false
     }
     return play
-})
-const gameOver = computed(() => {
-    let over = cards.value.every((card) => {card.turned === true})
-    return over
 })
 console.log()
 </script>
